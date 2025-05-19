@@ -13,7 +13,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Contador de Clicks',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromARGB(255, 60, 60, 178)),
+        colorScheme: ColorScheme.highContrastDark(
+          primary: const Color.fromARGB(255, 15, 7, 255),
+          secondary: const Color.fromARGB(255, 15, 7, 255),
+        ),
       ),
       home: const MyHomePage(title: 'Contador de Clicks'),
     );
